@@ -44,10 +44,12 @@ h4 {
     font-size: 1.1rem;
     font-weight: 600;
 }
-h5{
+
+h5 {
     font-size: 1rem;
     font-weight: 400;
 }
+
 a {
     display: block;
     color: var(--black);
@@ -146,9 +148,10 @@ header nav .nav-comp input::placeholder {
 /* End of Header */
 
 /* Cart */
-.content h2{
+.content h2 {
     padding: 70px 0 40px 0;
 }
+
 .cart {
     display: flex;
     display: -webkit-box;
@@ -159,29 +162,35 @@ header nav .nav-comp input::placeholder {
     padding: 24px 54px;
     border-bottom: 1px solid var(--disable);
 }
-.cart:not(:first-of-type){
+
+.cart:not(:first-of-type) {
     margin-top: 27px;
 }
-.cart .image-product{
+
+.cart .image-product {
     flex: 25%;
 }
-.cart .image-product img{
+
+.cart .image-product img {
     width: 75%;
     height: 75%;
 }
-.cart .detail-product{
-    display: flex; 
-    align-items: center; 
+
+.cart .detail-product {
+    display: flex;
+    align-items: center;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     flex: 75%;
 }
-.cart .detail-product .title{
+
+.cart .detail-product .title {
     flex: 3;
 }
-.cart .detail-product .input{
+
+.cart .detail-product .input {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -191,33 +200,40 @@ header nav .nav-comp input::placeholder {
     justify-content: flex-end;
     flex: 3;
 }
-.cart .detail-product .input input{
+
+.cart .detail-product .input input {
     width: 55px;
     padding: 5px;
     border: 1px solid var(--purple);
     border-radius: 3px;
     margin-left: 20px;
 }
-.cart .detail-product .price{
+
+.cart .detail-product .price {
     flex: 2;
 }
-.cart .detail-product .price h5{
+
+.cart .detail-product .price h5 {
     float: right;
 }
-.cart .detail-product .delete{
+
+.cart .detail-product .delete {
     flex: 1;
 }
-.cart .detail-product .delete a{
+
+.cart .detail-product .delete a {
     color: var(--danger);
     font-weight: 600;
     float: right;
 }
+
 /* End of Cart */
 /* Payment */
-.payment{
+.payment {
     margin-top: 80px;
 }
-.payment .address{
+
+.payment .address {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -225,7 +241,8 @@ header nav .nav-comp input::placeholder {
     display: -webkit-flex;
     flex-direction: row;
 }
-.payment .address .sub-add{
+
+.payment .address .sub-add {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -236,20 +253,30 @@ header nav .nav-comp input::placeholder {
     border-radius: 4px;
     flex: 80%;
 }
-.payment .address .sub-add div{
+
+.payment .address .sub-add .district {
+    flex: 2;
+}
+.payment .address .sub-add .post{
+    flex: 2;
+}
+.payment .address .sub-add div {
     padding: 1rem;
 }
-.payment .address .sub-add div:not(:last-of-type){
+
+.payment .address .sub-add div:not(:last-of-type) {
     border-right: 0.5px solid rgba(17, 17, 17, 0.25);
 }
-.payment .address .shipping{
+
+.payment .address .shipping {
     padding: 14px 20px 20px 17px;
     margin-left: 15px;
     border: 0.5px solid rgba(17, 17, 17, 0.25);
     border-radius: 4px;
     flex: 20%;
 }
-.payment .package{
+
+.payment .package {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -257,20 +284,24 @@ header nav .nav-comp input::placeholder {
     display: -webkit-flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 22px 20px 22px 31px;
+    padding: 1.2rem 1.1rem 1.2rem 1.7rem;
 }
-.payment .packages{
+
+.payment .packages {
     border: 0.5px solid rgba(17, 17, 17, 0.25);
     border-radius: 4px;
     width: 100%;
 }
-.payment .packages div:not(:first-of-type){
+
+.payment .packages div:not(:first-of-type) {
     border-top: 0.75px solid rgba(17, 17, 17, 0.25);
 }
-.payment .package p{
+
+.payment .package p {
     margin-bottom: 0 !important;
 }
-.payment .pricing div{
+
+.payment .pricing div {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -279,12 +310,14 @@ header nav .nav-comp input::placeholder {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 19px 0 19px 14px;
+    padding: 1rem 0 1rem 0.7rem;
 }
-.payment .pricing p{
+
+.payment .pricing p {
     margin-bottom: 0 !important;
 }
-.payment .checkout{
+
+.payment .checkout {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -296,13 +329,16 @@ header nav .nav-comp input::placeholder {
     margin-top: 56px;
     padding: 19px 0 22px 14px;
 }
-.payment .checkout small:nth-child(2){
+
+.payment .checkout small:nth-child(2) {
     color: var(--secondary-color);
     padding: 0 15px;
 }
-.payment .checkout button{
+
+.payment .checkout button {
     background: var(--main-color);
 }
+
 /* End of Payment */
 /* Footer */
 
@@ -395,7 +431,30 @@ footer .copyright small {
 }
 
 @media only screen and (max-width: 991px) {
+    .cart {
+        padding: 0;
+        border-bottom: unset;
+    }
 
+    .cart .image-product {
+        flex: 50%;
+    }
+    .cart .image-product img {
+        width: 100%;
+        height: 100%;
+    }
+    .pricing{
+        margin-top: 25px;
+    }
+    .cart .detail-product {
+        align-items: flex-start;
+        flex-direction: column;
+        flex: 50%;
+        margin-left: 40px;
+    }
+    .cart .detail-product div{
+        padding-bottom: 1rem;
+    }
     footer h4 {
         margin-top: 40px;
     }
@@ -415,7 +474,22 @@ footer .copyright small {
         margin-right: 50px;
     }
 }
+@media only screen and (max-width:680px){
+    .payment .address {
+        flex-direction: column;
+    }
+    
+    .payment .address .sub-add {
+        flex: 100%;
+    }
+    .payment .address .shipping {
+        margin-left: 0;
+        margin-top: 25px;
+        flex: 100%;
+    }
+    
 
+}
 @media only screen and (max-width:587px) {
     .logo i {
         display: block;
@@ -523,6 +597,13 @@ footer .copyright small {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .payment .address .sub-add {
+        flex-direction: column;
+    }
+    .payment .address .sub-add div:not(:first-of-type){
+        border-top: 1px solid var(--disable);
+    }
+    
 }
 
 @media only screen and (max-width:240px) {
@@ -534,7 +615,6 @@ footer .copyright small {
     .logo i {
         font-size: 20px;
     }
-
     footer .subcription .input-subcription input {
         width: 200px;
     }
@@ -543,7 +623,7 @@ footer .copyright small {
         width: 25px;
         height: 25px;
     }
-
+    
     footer .social img:nth-child(2) {
         margin: 0 20px;
     }
