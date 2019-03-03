@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Omni Store</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="cont">
+            <!-- NavBar -->
+            <nav>
+                <div class="logo">
+                    <img src="images/logo_biru.svg" alt="Logo">
+                    <i class="fas fa-bars" id="hamburger"></i>
+                </div>
+                <div id="togling">
+                    <div class="nav-comp">
+                        <span>
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search">
+                        </span>
+                        <button class="main-btn">Cart(2)</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- End NavBar -->
+        </div>
+    </header>
+    <!-- End Of Header -->
+    <!-- Checkout -->
+    <div class="checkout">
+        <div class="cont">
+            <h2>Checkout</h2>
+            <div class="row">
+                <div class="col-lg-5">
+                    <form action="">
+                        <h3>Shipping Address</h3>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="inline-name mb-3">
+                            <input type="text" class="form-control mr-3" placeholder="First Name">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address 2">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="City">
+                        </div>
+                        <div class="inline-name mb-3">
+                            <select class="custom-select mr-3">
+                                <option selected>Country</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="custom-select mr-3">
+                                <option selected>Province</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <input type="number" class="form-control" placeholder="Post Code">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Phone Number">
+                        </div>
+                    </form>
+                </div>
+                <div class=" col-lg-7">
+                    <div class="summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-product">
+                            <img src="images/baju_4.png" alt="Baju 4">
+                            <p>Omni . Cloth -
+                                Banana Yellow</p>
+                            <p>Quantity</p>
+                            <input type="number">
+                            <p>Rp 189.000</p>
+                            <a href="#">X</a>
+                        </div>
+                        <div class="summary-product">
+                            <img src="images/baju_4.png" alt="Baju 4">
+                            <p>Omni . Cloth -
+                                Banana Yellow</p>
+                            <p>Quantity</p>
+                            <input type="number">
+                            <p>Rp 189.000</p>
+                            <a href="#">X</a>
+                        </div>
+                        <div class="summary-price">
+                            <div class="price-content">
+                                <p>Price</p>
+                                <p>Rp. 445.000</p>
+                            </div>
+                            <div class="price-content">
+                                    <p>Shipping</p>
+                                    <p>Rp. 18.000</p>
+                                </div>
+                                <div class="price-content">
+                                        <p>Total</p>
+                                        <p>Rp. 463.000</p>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="submit">
+                        <a href="#">< Back To Cart</a>
+                        <button class="main-btn">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Checkout -->
+    <!-- Footer -->
+    <footer>
+        <div class="cont">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <img src="images/logo_ijo.svg" alt="Logo">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="information">
+                        <h4>Information</h4>
+                        <ul>
+                            <li>
+                                <p>About</p>
+                            </li>
+                            <li>
+                                <p>Shipping</p>
+                            </li>
+                            <li>
+                                <p>Privacy & Terms</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="subcription">
+                        <h4>Subscribe</h4>
+                        <p>Join Our News Letter</p>
+                        <div class="input-subcription">
+                            <input type="text" placeholder="Your Email Address">
+                            <button class="main-btn">Subscribe</button>
+                        </div>
+                        <div class="social">
+                            <img src="images/instagram.svg" alt="Instagram">
+                            <img src="images/dribble.svg" alt="Dribble">
+                            <img src="images/twitter.svg" alt="Twitter">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pattern-foot">
+            <img src="images/pattern_foot_fix.svg" alt="Pattern">
+        </div>
+        <div class="copyright">
+            <small>Omnicreativora Store® All Rights Reserved 2018 - 2019</small>
+        </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+    <!-- Script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#hamburger').hover(function () {
+                $(this).css('cursor', 'pointer');
+            });
+            $('#hamburger').click(function () {
+                $('#togling').toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
