@@ -80,7 +80,9 @@ a:hover {
     color: var(--main-color);
     display: none;
 }
-
+.main-btn:hover{
+    cursor: pointer;
+}
 /* End of Templating */
 
 /* Header*/
